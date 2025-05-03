@@ -1,0 +1,56 @@
+body {
+    font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
+}
+  
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 200px 0;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.cursor-box {
+    transition: all 0.3s ease;
+}
+
+.zoom-in:hover {
+    transform: scale(1.05);
+}
+
+.why-choose-details > div > ul > li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.why-consult-details > div > ul > li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer > div {
+    max-width: 100%;
+}
