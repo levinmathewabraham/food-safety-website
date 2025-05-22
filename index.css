@@ -23,7 +23,7 @@ iframe {
 }
 
 .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
+    background: url('assets/images/hero.jpg') center/cover no-repeat;
     color: white;
     padding: 200px 0;
     text-shadow: 1px 1px 5px #000;
