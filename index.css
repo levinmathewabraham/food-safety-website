@@ -1,11 +1,8 @@
 body {
-    font-family: "Manrope", sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-}
-  
-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -13,44 +10,94 @@ footer {
 }
 
 iframe {
-    border: 0;
     width: 100%;
 }
 
-.nav-link {
-    color: white;
-    font-weight: 500;
-}
-
-.hero {
-    background: url('assets/images/hero.jpg') center/cover no-repeat;
-    color: white;
-    padding: 200px 0;
-    text-shadow: 1px 1px 5px #000;
-}
-
-.section-title {
-    margin-bottom: 2rem;
-}
-
-.cursor-box {
-    transition: all 0.3s ease;
-}
-
-.zoom-in:hover {
-    transform: scale(1.05);
-}
-
-.why-choose-details > div > ul > li {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.why-consult-details > div > ul > li {
-    font-size: 20px;
-    margin-bottom: 20px;
+@font-face {
+    font-family: "Qurova";
+    src: url(./assets/fonts/QurovaDEMO-Regular-BF67a5c637a5dc9.otf);
 }
 
 footer > div {
     max-width: 100%;
+}
+
+.logo-img {
+    max-width: 500px;
+}
+
+.nav-link:hover {
+    color: #b09a56;
+}
+
+.hero-background {
+    background: url(./assets/images/services.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-container {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.hero-container > h1 {
+    font-family: "Qurova";
+    color: #a44123;
+}
+
+.hero-container > h2 {
+    font-family: "Alex Brush";
+    color: #4d6920;
+}
+
+.contact-btn {
+    /* color: #4d6920; */
+    background-color: #b09a56;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+.learn-more-btn {
+    /* color: #4d6920; */
+    border: #a44123 solid 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+.about-container {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.about-row {
+    border-left: #b09a56 solid 5px;
+}
+
+.who-we-are-row, .our-mission-row, .our-goal-row {
+    border-right: #b09a56 solid 5px;
+}
+
+.know-our-team-row, .our-vision-row {
+    border-left: #b09a56 solid 5px;
+}
+
+.services-background {
+    background: url(./assets/images/services.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.services-container {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.4);
 }
