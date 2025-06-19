@@ -30,12 +30,39 @@ footer > div {
     max-width: 320px;
 }
 
+.nav-link {
+    color: #111;
+}
+
 .nav-link:hover {
-    color: #b09a56;
+    color: #fff;
+    background-color: #a44123;
 }
 
 .navbar-toggler {
-    border: 0;
+    border: #a44123 solid 1px;
+    background-color: #b09a56;
+    border-radius: 0px;
+}
+
+.btn-close {
+    border: #a44123 solid 1px;
+    background-color: #b09a56;
+    border-radius: 0px;
+    opacity: 1;
+}
+
+.menubar {
+    background-color: #b09a56;
+}
+
+.marquee-background {
+    background-color: #b09a56;
+    color: #fff;
+}
+
+.marquee-title {
+    background-color: #a44123;
 }
 
 .hero-background {
@@ -182,6 +209,74 @@ background: var(--secondary-color);
 right: 0;
 }
 
+#specializations-section .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+#specializations-section .card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#specializations-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#specializations-section .card-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+#benefits-section .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+#benefits-section .card {
+    width: 250px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#benefits-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#benefits-section .card-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    word-break: break-word;
+}
+
 .about-container {
     background: rgba(255, 255, 255, 0.4);
 }
@@ -210,6 +305,25 @@ right: 0;
     background: rgba(255, 255, 255, 0.4);
 }
 
+.contact-background {
+    background: url(./assets/images/services.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .contact-container {
     background: rgba(255, 255, 255, 0.4);
+}
+
+.card {
+    background: #b09a56;
+    color: #fff;
+    border: #a44123 solid 1px;
+}
+
+.card:hover {
+    transform: translate(1px, 5%);
+    transition: transform 0.3s ease;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We believe we can provide advanced solutions that help businesses and individuals succeed in today's ever-changing world. Our solutions are designed to make your business easier, more efficient, and more productive.">
-    <title>Services - Safeguard Quality Expert Consultancy LLC.</title>
+    <title>Food Safety Services - Safeguard Quality Expert Consultancy LLC.</title>
     <meta name="description" content="We believe we can provide advanced solutions that help businesses and individuals succeed in today's ever-changing world. Our solutions are designed to make your business easier, more efficient, and more productive.">
     <meta name="keywords" content="food safety, health, safety, management, food regulations">
     <meta name="author" content="Safeguard Quality Expert Consultancy LLC.">
@@ -16,6 +16,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="/assets/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -24,12 +28,12 @@
 <body>
   <section id="header-section">
     <header>
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="logo-img">
-          <a href="./index.html"><img class="img-fluid w-100" style="max-width: 320px;" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
+      <div class="container-fluid d-flex justify-content-between align-items-center m-0 p-0">
+        <div class="logo-img-div">
+          <a href="./index.html"><img class="logo-img img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
         </div>
         <div class="menubar">
-          <nav class="navbar navbar-expand-md">
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,17 +41,17 @@
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <div class="logo-img">
-                    <a href="./index.html"><img class="img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
+                    <a href="./index.html"><img class="logo-img img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
                   </div>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      <a class="nav-link active" aria-current="page" href="./index.html"><i class="fi fi-rr-home"></i> Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="./about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                      <a class="nav-link dropdown-toggle" href="./about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi fi-rr-info"></i> About</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./about.html#who-we-are">Who We Are</a></li>
                         <li><a class="dropdown-item" href="./about.html#know-our-team">Know Our Team</a></li>
@@ -57,16 +61,22 @@
                         <li><a class="dropdown-item" href="./about.html#our-goal">Our Goal</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consultancy Services</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./food-safety-services.html">Food Safety</a></li>
+                    <li class="nav-item dropdown d-none d-md-block d-xl-none">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi fi-rr-info"></i> Services</a>
+                      <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="nav-link dropdown-item" href="./food-safety-services.html" role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Food Safety Services</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./health-safety-management-services.html">Health, Safety & Management Systems</a></li>
+                        <li><a class="nav-link dropdown-item" href="./health-safety-management-services.html  " role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Health, Safety & Quality Services</a></li>
                       </ul>
                     </li>
+                    <li class="nav-item dropdown d-md-none d-xl-block">
+                      <a class="nav-link dropdown-item" href="./food-safety-services.html" role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Food Safety Services</a>
+                    </li>
+                    <li class="nav-item dropdown d-md-none d-xl-block">
+                      <a class="nav-link dropdown-item" href="./health-safety-management-services.html  " role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Health, Safety & Quality Services</a>
+                    </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">Contact</a>
+                      <a class="nav-link" href="./contact.html"><i class="bi bi-telephone"></i> Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -80,8 +90,9 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="https://wa.me/971529980977"><i class="fa-brands fa-whatsapp"></i> +971 52 9980977</a>
-                      <a class="nav-link active" aria-current="page" href="mailto:consultus@safeguardme.ae"><i class="fa-solid fa-envelope"></i> consultus@safeguardme.ae</a>
+                      <a class="nav-link" aria-current="page" href="https://wa.me/971555134673"><i class="fa-brands fa-whatsapp"></i> Dubai, UAE</a>
+                      <a class="nav-link" aria-current="page" href="https://wa.me/971555134673"><i class="fa-brands fa-whatsapp"></i> +971 55 5134673</a>
+                      <a class="nav-link" aria-current="page" href="mailto:consultus@safeguardme.ae"><i class="fa-solid fa-envelope"></i> consultus@safeguardme.ae</a>
                     </li>
                   </ul>
                 </div>
@@ -91,6 +102,17 @@
         </div>
       </div>
     </header>
+  </section>
+
+  <section id="marquee-section">
+    <div class="marquee-background">
+      <div class="d-flex">
+        <h5 class="marquee-title m-0 px-2">UPDATES</h5>
+        <div class="marquee-text w-100">
+          <marquee behavior="scroll" direction="left">STAY TUNED FOR LATEST UPDATES</marquee>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="hero-section">
@@ -109,8 +131,8 @@
             <div class="card h-100">
               <img src="./assets/images/gap-analysis.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">GAP Analysis</h3>
-                <p class="card-text">Restaurant / Cafes / Kiosks / Food Trucks / Production Units / Kitchen Inspection</p>
+                <h3 class="card-title text-body-emphasis">GAP Analysis</h3>
+                <p class="card-text">Assessing Food Establishments</p>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -119,8 +141,7 @@
             <div class="card h-100">
               <img src="./assets/images/iso-haccp-fssc.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Implementing and conducting awareness classes on</h3>
-                <p class="card-text">ISO 22000 <br> FSSC 22000 <br> HACCP</p>
+                <h3 class="card-title text-body-emphasis">F&B Business Setup Consultation</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -129,8 +150,21 @@
             <div class="card h-100">
               <img src="./assets/images/food-advertising-and-marketing.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Food Advertising and Marketing</h3>
-                <p class="card-text"></p>
+                <h3 class="card-title text-body-emphasis">Food Safety Standards - Implementation & Awareness</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample1">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">ISO 22000</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">GMP (Good Manufacturing Practices)</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">FSSC 22000</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">GHP (Good Hygiene Practices)</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">HACCP</span>
+                    </div>
+                  </div>
+                </div>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -139,7 +173,7 @@
             <div class="card h-100">
               <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Menu/Product Development</h3>
+                <h3 class="card-title text-body-emphasis">Food Advertising & Marketing Compliance</h3>
                 <p class="card-text"></p>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
@@ -149,7 +183,7 @@
             <div class="card h-100">
               <img src="./assets/images/supplier-audit.jpg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Supplier Audit</h3>
+                <h3 class="card-title text-body-emphasis">Menu & Product Development</h3>
                 <p class="card-text"></p>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
@@ -159,7 +193,7 @@
             <div class="card h-100">
               <img src="./assets/images/raw-materials-and-ingredients.webp" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Sourcing Raw Materials and Ingredients</h3>
+                <h3 class="card-title text-body-emphasis">Supplier Audits & Vendor Assessment</h3>
                 <p class="card-text"></p>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
@@ -169,7 +203,7 @@
             <div class="card h-100">
               <img src="./assets/images/awareness-classes.webp" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Awareness Classes</h3>
+                <h3 class="card-title  text-body-emphasis">Raw Material & Ingredient Sourcing</h3>
                 <p class="card-text"></p>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
@@ -179,9 +213,20 @@
             <div class="card h-100">
               <img src="./assets/images/regulatory-compliances.webp" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Regulatory Compliances</h3>
-                <p class="card-text">Internal,external standards and legislations</p>
-                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+                <h3 class="card-title  text-body-emphasis">Regulatory Compliance Audits</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Internal & External Standards and Legislation</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
               </div>
             </div>
           </div>
@@ -189,8 +234,7 @@
             <div class="card h-100">
               <img src="./assets/images/halal.webp" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">HALAL</h3>
-                <p class="card-text"></p>
+                <h3 class="card-title  text-body-emphasis">HALAL Certification & Compliance</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -199,28 +243,7 @@
             <div class="card h-100">
               <img src="./assets/images/compliance-audits.jpg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Compliance Audits</h3>
-                <p class="card-text"></p>
-                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/images/operational-optimization.jpg" class="card-img-top" style="max-height: 230px" alt="...">
-              <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Operational Optimization</h3>
-                <p class="card-text"></p>
-                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/images/quality-control-and-compliance.jpg" class="card-img-top" style="max-height: 230px" alt="...">
-              <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Quality Control and Compliance</h3>
-                <p class="card-text"></p>
+                <h3 class="card-title  text-body-emphasis">Quality Control & Assurance Programs</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -229,8 +252,25 @@
             <div class="card h-100">
               <img src="./assets/images/cost-and-quality-auditing.jpg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Cost and Quality Auditing</h3>
-                <p class="card-text"></p>
+                <h3 class="card-title  text-body-emphasis">Cost & Quality Auditing for Food Businesses</h3>
+                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/operational-optimization.jpg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Operational Optimization</h3>
+                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/quality-control-and-compliance.jpg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Quality Control and Compliance</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -239,8 +279,28 @@
             <div class="card h-100">
               <img src="./assets/images/mystery-shopping-services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Mystery Shopping Services</h3>
-                <p class="card-text"></p>
+                <h3 class="card-title  text-body-emphasis">Mystery Shopping Services</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Evaluating Food Safety & Customer Experience</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Food Waste Management & Sustainability Guidance</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
               </div>
             </div>
@@ -249,9 +309,115 @@
             <div class="card h-100">
               <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
               <div class="card-body">
-                <h3 class="card-title fs-2 text-body-emphasis">Other related F&B Business Setup Consultation</h3>
-                <p class="card-text">Includes assistance in providing all kinds of kitchen accessories / calibration / lab testing / labelling related support</p>
+                <h3 class="card-title  text-body-emphasis">Allergen Management & Labelling Compliance</h3>
                 <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Personal Hygiene & Staff Training</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Ensuring Safe Food Handling Practices</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Pest Control Advisory</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample5">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Preventing Contamination Risks</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Digital Food Safety Management Systems Implementation (FSMS)</h3>
+                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Food Recall and Incident Management Planning</h3>
+                <!-- <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title text-body-emphasis">Labelling & Packaging Compliance</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample6">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Product registration</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Label verification</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">and more</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/images/services.jpeg" class="card-img-top" style="max-height: 230px" alt="...">
+              <div class="card-body">
+                <h3 class="card-title  text-body-emphasis">Vendor & Supplier Sourcing Management</h3>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                  Know More
+                </button>
+                <div class="collapse" id="collapseExample7">
+                  <div class="card card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Laboratory Testing Services</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Calibration Services</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Kitchen Equipment Advisory & Procurement</span>
+                      <span class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Other Support Services</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add JS for viewing more content on the same page
+                  <a href="#" class="icon-link">Read More<i class="fa-solid fa-chevron-right"></i></a> 
+                -->
               </div>
             </div>
           </div>
@@ -265,21 +431,23 @@
       <div class="container-fluid">
         <div class="row m-0">
           <div class="col-12 col-md-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861009.5379097238!2d53.94857525!3d24.354006899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2sae!4v1748806511680!5m2!1sen!2sae" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462566.58428379236!2d54.60352350002393!3d25.07471821511086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai!5e0!3m2!1sen!2sae!4v1750253294334!5m2!1sen!2sae" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-12 col-md-3">
             <h5>Keep In Touch</h5>
             <p class="link-secondary">
+              <a class="link-secondary" style="text-decoration: none;" href="#"><i class="bi bi-geo-alt"></i> Dubai, UAE</a> 
+              <br>
               <a class="link-secondary" style="text-decoration: none;" href="mailto:consultus@safeguardme.ae"><i class="bi bi-envelope"></i> consultus@safeguardme.ae</a> 
               <br> 
-              <a class="link-secondary" style="text-decoration: none;" href="https://wa.me/971529980977"><i class="bi bi-telephone"></i> +971-52-9980977</a>
+              <a class="link-secondary" style="text-decoration: none;" href="https://wa.me/971555134673"><i class="bi bi-telephone"></i> +971-55-5134673</a>
             </p>
           </div>
           <div class="col-12 col-md-3">
             <h5>Quick Links</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="link-secondary text-decoration-none" href="./index.html">Home</a></li>
-              <li><a class="link-secondary text-decoration-none" href="./index.html#services-section">Services</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#hero-section">Home</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#services-section">Services</a></li>
               <li><a class="link-secondary text-decoration-none" href="./about.html">About Us</a></li>
               <li><a class="link-secondary text-decoration-none" href="./contact.html">Contact Us</a></li>
             </ul>
@@ -287,7 +455,7 @@
           <div class="col-12 col-md-3">
             <h5>Social Links</h5>
             <p class="lead">
-              <a class="link-secondary" href="https://wa.me/971529980977"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;&nbsp;
+              <a class="link-secondary" href="https://wa.me/971555134673"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;&nbsp;
               <a class="link-secondary" href="https://www.instagram.com/safeguardme.ae/"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
               <a class="link-secondary" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
               <a class="link-secondary" href="https://www.linkedin.com/in/safeguard-quality-expert-consultancy-llc-0321b1368/"><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
@@ -301,6 +469,9 @@
   </section>
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/assets/owlcarousel/owl.carousel.js"></script>
+  <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
