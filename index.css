@@ -327,3 +327,11 @@ footer > div {
     transform: translate(1px, 5%);
     transition: transform 0.3s ease;
 }
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+    /* border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; */
+}
