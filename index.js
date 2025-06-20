@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     }
-  });
+});
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
@@ -32,7 +32,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:2000,
     autoplayHoverPause:true,
     responsiveClass:true,
     responsive:{
