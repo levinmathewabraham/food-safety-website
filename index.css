@@ -332,6 +332,9 @@ footer > div {
     height: 230px;
     object-fit: cover;
     width: 100%;
-    /* border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem; */
+}
+
+.services-card {
+    background-color: #ffffff87;
+    color: var(--primary-color);
 }
