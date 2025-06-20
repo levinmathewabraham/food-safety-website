@@ -35,7 +35,7 @@ footer > div {
 }
 
 .logo-img {
-    max-width: 320px;
+    max-width: 350px;
 }
 
 .nav-link {
@@ -77,16 +77,18 @@ footer > div {
     background-color: var(--primary-color);
 }
 
-.hero-background, .about-background, .services-background {
-    background: url(./assets/images/services.jpeg);
+.hero-background {
+    background: url(./assets/images/WhatsApp\ Image\ 2025-06-20\ at\ 22.02.40_e98fe1f7.jpg);
     background-size: cover;
+    /* background-size: contain; */
+    background-position: center;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 
 .hero-container {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .hero-container > h1 {
@@ -259,6 +261,14 @@ footer > div {
     background: rgba(255, 255, 255, 0.4);
 }
 
+.about-background {
+    background: url(./assets/images/WhatsApp\ Image\ 2025-06-20\ at\ 21.51.53_a660f434.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .about-row, .know-our-team-row, .our-vision-row {
     border-left: var(--background-color) solid 5px;
 }
@@ -302,15 +312,16 @@ footer > div {
 }
 
 .services-background {
-    background: url(./assets/images/services.jpeg);
+    background: url(./assets/images/WhatsApp\ Image\ 2025-06-20\ at\ 21.56.56_809ed1cf.jpg);
     background-size: cover;
+    background-position: 5% center;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 
 .services-container {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .contact-container {
@@ -335,6 +346,6 @@ footer > div {
 }
 
 .services-card {
-    background-color: #ffffff87;
+    background-color: #ffffffe3;
     color: var(--primary-color);
 }
