@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #a44123;
+    --secondary-color: #4d6920;
+    --background-color: #b09a56;
+    --text-color: #000;
+    --hover-color: #fff;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
@@ -31,41 +39,45 @@ footer > div {
 }
 
 .nav-link {
-    color: #111;
+    color: var(--text-color);
 }
 
 .nav-link:hover {
-    color: #fff;
-    background-color: #a44123;
+    color: var(--hover-color);
+    background-color: var(--primary-color);
 }
 
+.navbar .dropdown-menu {
+    margin-top: 0;
+}
+  
 .navbar-toggler {
-    border: #a44123 solid 1px;
-    background-color: #b09a56;
+    border: var(--primary-color) solid 1px;
+    background-color: var(--background-color);
     border-radius: 0px;
 }
 
 .btn-close {
-    border: #a44123 solid 1px;
-    background-color: #b09a56;
+    border: var(--primary-color) solid 1px;
+    background-color: var(--background-color);
     border-radius: 0px;
     opacity: 1;
 }
 
 .menubar {
-    background-color: #b09a56;
+    background-color: var(--background-color);
 }
 
 .marquee-background {
-    background-color: #b09a56;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--hover-color);
 }
 
 .marquee-title {
-    background-color: #a44123;
+    background-color: var(--primary-color);
 }
 
-.hero-background {
+.hero-background, .about-background, .services-background {
     background: url(./assets/images/services.jpeg);
     background-size: cover;
     height: 100%;
@@ -79,12 +91,12 @@ footer > div {
 
 .hero-container > h1 {
     font-family: "Qurova";
-    color: #a44123;
+    color: var(--primary-color);
 }
 
 .hero-container > h2 {
     font-family: "Alex Brush";
-    color: #4d6920;
+    color: var(--secondary-color);
 }
 
 .contact-btn {
@@ -123,29 +135,29 @@ footer > div {
 }
 
 .contact-btn .arrow::before {
-content: "";
-box-sizing: border-box;
-position: absolute;
-border: solid var(--secondary-color);
-border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-display: inline-block;
-top: -3px;
-right: 3px;
-transition: 0.2s;
-padding: 3px;
-transform: rotate(-45deg);
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
 }
 
 .contact-btn:hover {
-background-color: var(--hover-color);
+    background-color: var(--hover-color);
 }
 
 .contact-btn:hover .arrow {
-background: var(--secondary-color);
+    background: var(--secondary-color);
 }
 
 .contact-btn:hover .arrow:before {
-right: 0;
+    right: 0;
 }
 
 .learn-more-btn {
@@ -184,63 +196,29 @@ right: 0;
 }
 
 .learn-more-btn .arrow::before {
-content: "";
-box-sizing: border-box;
-position: absolute;
-border: solid var(--secondary-color);
-border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-display: inline-block;
-top: -3px;
-right: 3px;
-transition: 0.2s;
-padding: 3px;
-transform: rotate(-45deg);
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
 }
 
 .learn-more-btn:hover {
-background-color: var(--hover-color);
+    background-color: var(--hover-color);
 }
 
 .learn-more-btn:hover .arrow {
-background: var(--secondary-color);
+    background: var(--secondary-color);
 }
 
 .learn-more-btn:hover .arrow:before {
-right: 0;
-}
-
-#specializations-section .owl-item {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    height: 100%;
-}
-
-#specializations-section .card {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-#specializations-section .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#specializations-section .card-title {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    word-break: break-word;
+    right: 0;
 }
 
 #benefits-section .owl-item {
@@ -281,16 +259,46 @@ right: 0;
     background: rgba(255, 255, 255, 0.4);
 }
 
-.about-row {
-    border-left: #b09a56 solid 5px;
+.about-row, .know-our-team-row, .our-vision-row {
+    border-left: var(--background-color) solid 5px;
 }
 
 .who-we-are-row, .our-mission-row, .our-goal-row {
-    border-right: #b09a56 solid 5px;
+    border-right: var(--background-color) solid 5px;
 }
 
-.know-our-team-row, .our-vision-row {
-    border-left: #b09a56 solid 5px;
+#sectors-section .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+#sectors-section .card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#sectors-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#sectors-section .card-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    word-break: break-word;
 }
 
 .services-background {
@@ -305,22 +313,14 @@ right: 0;
     background: rgba(255, 255, 255, 0.4);
 }
 
-.contact-background {
-    background: url(./assets/images/services.jpeg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
 .contact-container {
     background: rgba(255, 255, 255, 0.4);
 }
 
 .card {
-    background: #b09a56;
-    color: #fff;
-    border: #a44123 solid 1px;
+    background: var(--background-color);
+    color: var(--hover-color);
+    border: var(--primary-color) solid 1px;
 }
 
 .card:hover {

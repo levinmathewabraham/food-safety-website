@@ -1,3 +1,28 @@
+// Enable dropdown on hover for desktop
+document.addEventListener('DOMContentLoaded', function () {
+    // Only apply on screens wider than 768px (md and up)
+    if (window.innerWidth > 700) {
+      document.querySelectorAll('.navbar .dropdown').forEach(function (dropdown) {
+        dropdown.addEventListener('mouseenter', function () {
+          let dropdownToggle = this.querySelector('.dropdown-toggle');
+          if (dropdownToggle) {
+            let dropdownMenu = this.querySelector('.dropdown-menu');
+            dropdownToggle.classList.add('show');
+            dropdownMenu.classList.add('show');
+          }
+        });
+        dropdown.addEventListener('mouseleave', function () {
+          let dropdownToggle = this.querySelector('.dropdown-toggle');
+          if (dropdownToggle) {
+            let dropdownMenu = this.querySelector('.dropdown-menu');
+            dropdownToggle.classList.remove('show');
+            dropdownMenu.classList.remove('show');
+          }
+        });
+      });
+    }
+  });
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
 });
@@ -7,7 +32,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:2000,
+    autoplayTimeout:1000,
     autoplayHoverPause:true,
     responsiveClass:true,
     responsive:{
@@ -25,18 +50,4 @@ $('.owl-carousel').owlCarousel({
             loop:false
         }
     }
-
 });
-
-var owl = $('.owl-carousel');
-owl.owlCarousel();
-// Go to the next item
-$('.customNextBtn').click(function() {
-    owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.customPrevBtn').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
-})
