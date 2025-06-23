@@ -257,6 +257,23 @@ footer > div {
     word-break: break-word;
 }
 
+.card {
+    background: var(--background-color);
+    color: var(--hover-color);
+    border: var(--primary-color) solid 1px;
+}
+
+.card:hover {
+    transform: translate(1px, 5%);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .about-container {
     background: rgba(255, 255, 255, 0.4);
 }
@@ -269,12 +286,61 @@ footer > div {
     z-index: -1;
 }
 
-.about-row, .know-our-team-row, .our-vision-row {
-    border-left: var(--background-color) solid 5px;
+.view-more-sectors, .view-less-sectors {
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 1px var(--secondary-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    color: white;
 }
 
-.who-we-are-row, .our-mission-row, .our-goal-row {
-    border-right: var(--background-color) solid 5px;
+.view-more-sectors span, .view-less-sectors span {
+    transition-duration: 0.3s;
+}
+
+.view-more-sectors .svgIcon, .view-less-sectors .svgIcon {
+    transition-duration: 0.3s;
+    transform: translateX(5px);
+}
+  
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.view-more-sectors:hover, .view-less-sectors:hover {
+    transition-duration: 0.3s;
+    background-color: var(--text-color);
+    align-items: center;
+}
+
+.view-more-sectors:hover span, .view-less-sectors:hover span {
+    font-size: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.view-more-sectors:hover .svgIcon, .view-less-sectors:hover .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+    transform: translateX(0);
+}
+
+.view-more-sectors::before, .view-less-sectors::before {
+    content: none;
 }
 
 #sectors-section .owl-item {
@@ -285,8 +351,8 @@ footer > div {
 }
 
 #sectors-section .card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    /* height: 250px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,28 +390,80 @@ footer > div {
     background: rgba(255, 255, 255, 0.7);
 }
 
-.contact-container {
-    background: rgba(255, 255, 255, 0.4);
+.services-btn {
+    --primary-color: #4d6920;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    padding: 0.8em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.card {
-    background: var(--background-color);
-    color: var(--hover-color);
-    border: var(--primary-color) solid 1px;
+.services-btn .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card:hover {
-    transform: translate(1px, 5%);
-    transition: transform 0.3s ease;
+.services-btn .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
 }
 
-.card-img-top {
-    height: 230px;
-    object-fit: cover;
-    width: 100%;
+.services-btn .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.services-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.services-btn:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.services-btn:hover .arrow:before {
+    right: 0;
 }
 
 .services-card {
     background-color: #ffffffe3;
     color: var(--primary-color);
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.about-row, .know-our-team-row, .our-vision-row {
+    border-left: var(--background-color) solid 5px;
+}
+
+.who-we-are-row, .our-mission-row, .our-goal-row {
+    border-right: var(--background-color) solid 5px;
 }
