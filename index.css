@@ -509,3 +509,29 @@ footer > div {
     transition-duration: 0.3s;
     transform: translateX(0);
 }
+
+.form-control {
+    border: #a44123 solid 1px;
+}
+
+.form-control: {
+    border: #4d6920 solid 1px;
+}
+
+.submit-btn {
+    border: var(--background-color) solid 3px;
+    border-radius: 30px;
+    color: var(--hover-color);
+    padding: 0.8em 1.8em;
+    background: var(--primary-color);
+    transition: 0.2s background;
+    gap: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    color: var(--hover-color);
+    background-color: var(--text-color);
+    border: var(--) solid 3px;
+}
