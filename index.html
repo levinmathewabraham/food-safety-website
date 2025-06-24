@@ -120,12 +120,12 @@
         <h1 class="display-4 pt-5"><span style="font-family: 'Poppins'; font-weight: 400;">W</span>ELCOME TO SAFEGUAR<span style="font-family: 'Poppins'; font-weight: 400;">D</span> <span style="font-family: 'Poppins'; font-weight: 400;">Q</span>UALITY <br>EXPERT CONSULTANCY LLC.</h1>
         <h2 class="display-5 pt-2">Secure Business, Safe Future</h2>
         <div class="d-grid gap-2 d-sm-flex justify-content-center">
-          <a href="./contact.html" class="contact-btn px-4 gap-3">Contact Us
+          <a href="./contact.html" class="cta-btn px-4 gap-3">Contact Us
             <div class="arrow-wrapper">
                 <div class="arrow"></div>
             </div>
           </a>
-          <a href="./about.html" class="learn-more-btn px-4">Learn More
+          <a href="./about.html" class="cta-btn learn-more-btn px-4">Learn More
             <div class="arrow-wrapper">
                 <div class="arrow"></div>
             </div>
@@ -240,8 +240,8 @@
               solutions empower organizations to operate seamlessly, efficiently, and 
               productively.
             </p>
-            <div class="learn-more-button d-grid gap-2 d-flex">
-              <a class="learn-more-btn px-4" href="./about.html">Learn More
+            <div class="d-grid gap-2 d-flex">
+              <a class="cta-btn learn-more-btn px-4" href="./about.html">Learn More
                 <div class="arrow-wrapper">
                   <div class="arrow"></div>
                 </div>
@@ -433,22 +433,12 @@
               <div class="services-card card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
                 <div class="d-flex flex-column h-100 p-5 justify-content-center align-items-center text-shadow-1">
                   <h3 class="mt-5 mb-5 display-6 lh-1 fw-bold" style="color: #4d6920;">Food Safety Services</h3>
-                  <div class="learn-more-button d-grid gap-2 d-sm-flex justify-content-center">
-                    <a href="./food-safety-services.html" class="contact-btn px-4 gap-3">View Services
+                  <div class="d-grid gap-2 d-sm-flex justify-content-center">
+                    <a href="./food-safety-services.html" class="cta-btn px-4 gap-3">View Services
                       <div class="arrow-wrapper">
                           <div class="arrow"></div>
                       </div>
                     </a>
-                    <!-- <a href="./food-safety-services.html" style="text-decoration: none;">
-                      <button id="view-more-sectors" class="view-more-sectors">
-                        <span>View Services</span>
-                        <svg class="svgIcon" viewBox="0 0 448 512">
-                          <path
-                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                          />
-                        </svg>
-                    </button>
-                    </a> -->
                   </div>
                 </div>
               </div>
@@ -457,22 +447,12 @@
               <div class="services-card card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
                 <div class="d-flex flex-column h-100 p-5 justify-content-center align-items-center text-shadow-1">
                   <h3 class="mt-5 mb-4 display-6 lh-1 fw-bold">Health, Safety & Quality Services</h3>
-                  <div class="learn-more-button d-grid gap-2 d-sm-flex justify-content-center">
-                    <a href="./health-safety-quality-services.html" class="services-btn px-4 gap-3">View Services
+                  <div class="d-grid gap-2 d-sm-flex justify-content-center">
+                    <a href="./health-safety-quality-services.html" class="cta-btn hsq-btn px-4 gap-3">View Services
                       <div class="arrow-wrapper">
                           <div class="arrow"></div>
                       </div>
                     </a>
-                    <!-- <a href="./health-safety-quality-services.html" style="text-decoration: none;">
-                      <button id="view-more-sectors" class="view-more-sectors">
-                        <span>View Services</span>
-                        <svg class="svgIcon" viewBox="0 0 448 512">
-                          <path
-                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                          />
-                        </svg>
-                    </button>
-                    </a> -->
                   </div>
                 </div>
               </div>
@@ -509,9 +489,11 @@
           <div class="col-12">
             <textarea class="form-control" rows="4" name="message" placeholder="Message" required></textarea>
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn submit-btn px-4">Submit</button>
+          <div class="col-12 d-grid gap-2 d-sm-flex justify-content-center">
+            <button type="submit" class="cta-btn submit-btn px-4 shadow-lg">Submit</button>
           </div>
+          <input type="hidden" name="_next" value="https://food-safety-website.onrender.com/index.html">
+          <input type="hidden" name="_template" value="box">
         </form>
       </div>
     </div>

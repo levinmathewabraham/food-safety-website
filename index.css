@@ -101,7 +101,7 @@ footer > div {
     color: var(--secondary-color);
 }
 
-.contact-btn {
+.cta-btn {
     --primary-color: #a44123;
     --secondary-color: #fff;
     --hover-color: #111;
@@ -121,13 +121,13 @@ footer > div {
     text-decoration: none;
 }
 
-.contact-btn .arrow-wrapper {
+.cta-btn .arrow-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-btn .arrow {
+.cta-btn .arrow {
     margin-top: 1px;
     width: var(--arrow-width);
     background: var(--primary-color);
@@ -136,7 +136,7 @@ footer > div {
     transition: 0.2s;
 }
 
-.contact-btn .arrow::before {
+.cta-btn .arrow::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -150,77 +150,20 @@ footer > div {
     transform: rotate(-45deg);
 }
 
-.contact-btn:hover {
+.cta-btn:hover {
     background-color: var(--hover-color);
 }
 
-.contact-btn:hover .arrow {
+.cta-btn:hover .arrow {
     background: var(--secondary-color);
 }
 
-.contact-btn:hover .arrow:before {
+.cta-btn:hover .arrow:before {
     right: 0;
 }
 
 .learn-more-btn {
     --primary-color: #b09a56;
-    --secondary-color: #fff;
-    --hover-color: #111;
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 30px;
-    color: var(--secondary-color);
-    padding: 0.8em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    transition: 0.2s background;
-    align-items: center;
-    gap: 0.6em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.learn-more-btn .arrow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.learn-more-btn .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    background: var(--primary-color);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s;
-}
-
-.learn-more-btn .arrow::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-}
-
-.learn-more-btn:hover {
-    background-color: var(--hover-color);
-}
-
-.learn-more-btn:hover .arrow {
-    background: var(--secondary-color);
-}
-
-.learn-more-btn:hover .arrow:before {
-    right: 0;
 }
 
 #benefits-section .owl-item {
@@ -286,7 +229,7 @@ footer > div {
     z-index: -1;
 }
 
-.view-more-sectors, .view-less-sectors {
+/* .view-more-sectors, .view-less-sectors {
     width: 190px;
     height: 50px;
     border-radius: 50px;
@@ -310,7 +253,7 @@ footer > div {
 .view-more-sectors .svgIcon, .view-less-sectors .svgIcon {
     transition-duration: 0.3s;
     transform: translateX(5px);
-}
+} 
   
 .svgIcon {
     width: 12px;
@@ -319,9 +262,9 @@ footer > div {
 
 .svgIcon path {
     fill: white;
-}
+} */
 
-.view-more-sectors:hover, .view-less-sectors:hover {
+/* .view-more-sectors:hover, .view-less-sectors:hover {
     transition-duration: 0.3s;
     background-color: var(--text-color);
     align-items: center;
@@ -341,7 +284,7 @@ footer > div {
 
 .view-more-sectors::before, .view-less-sectors::before {
     content: none;
-}
+} */
 
 #sectors-section .owl-item {
     display: flex;
@@ -352,7 +295,6 @@ footer > div {
 
 #sectors-section .card {
     width: 200px;
-    /* height: 250px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -390,65 +332,8 @@ footer > div {
     background: rgba(255, 255, 255, 0.7);
 }
 
-.services-btn {
+.hsq-btn {
     --primary-color: #4d6920;
-    --secondary-color: #fff;
-    --hover-color: #111;
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 0;
-    border-radius: 30px;
-    color: var(--secondary-color);
-    padding: 0.8em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    transition: 0.2s background;
-    align-items: center;
-    gap: 0.6em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.services-btn .arrow-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.services-btn .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    background: var(--primary-color);
-    height: var(--arrow-stroke);
-    position: relative;
-    transition: 0.2s;
-}
-
-.services-btn .arrow::before {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    display: inline-block;
-    top: -3px;
-    right: 3px;
-    transition: 0.2s;
-    padding: 3px;
-    transform: rotate(-45deg);
-}
-
-.services-btn:hover {
-    background-color: var(--hover-color);
-}
-
-.services-btn:hover .arrow {
-    background: var(--secondary-color);
-}
-
-.services-btn:hover .arrow:before {
-    right: 0;
 }
 
 .services-card {
@@ -516,18 +401,8 @@ footer > div {
 
 .submit-btn {
     border: var(--background-color) solid 3px;
-    border-radius: 30px;
-    color: var(--hover-color);
-    padding: 0.8em 1.8em;
-    background: var(--primary-color);
-    transition: 0.2s background;
-    gap: 0.6em;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .submit-btn:hover {
-    color: var(--hover-color);
-    background-color: var(--text-color);
-    border: var(--) solid 3px;
+    border: var(--secondary-color) solid 3px;
 }
