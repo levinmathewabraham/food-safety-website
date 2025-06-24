@@ -514,10 +514,6 @@ footer > div {
     border: #a44123 solid 1px;
 }
 
-.form-control: {
-    border: #4d6920 solid 1px;
-}
-
 .submit-btn {
     border: var(--background-color) solid 3px;
     border-radius: 30px;
