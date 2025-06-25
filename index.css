@@ -75,6 +75,7 @@ footer > div {
 
 .marquee-title {
     background-color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .hero-background {
