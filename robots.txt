@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://food-safety-website.onrender.com/sitemap.xml
