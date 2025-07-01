@@ -50,7 +50,7 @@ footer > div {
 .navbar .dropdown-menu {
     margin-top: 0;
 }
-  
+
 .navbar-toggler {
     border: var(--primary-color) solid 1px;
     background-color: var(--background-color);
