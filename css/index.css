@@ -30,46 +30,70 @@ footer > div {
     max-width: 100%;
 }
 
+/* Header */
 .logo-img-div {
     max-width: 500px;
 }
 
-.logo-img {
+.logo-img, .logo-img-sm {
     max-width: 350px;
 }
 
+.header-row {
+    height: 140px;
+}
+
 .nav-link {
-    color: var(--text-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-link:hover {
-    color: var(--hover-color);
-    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--hover-color);
+    border-radius: 40px;
+    transform: scale(1.05);
 }
 
-.navbar .dropdown-menu {
-    margin-top: 0;
+.offcanvas {
+    background-color: var(--hover-color);
 }
 
 .navbar-toggler {
-    border: var(--primary-color) solid 1px;
+    border: var(--background-color) solid 1px;
     background-color: var(--background-color);
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 .btn-close {
-    border: var(--primary-color) solid 1px;
-    background-color: var(--background-color);
-    border-radius: 0px;
+    background-color: var(--hover-color);
+    border: var(--primary-color) solid 2px;
+    border-radius: 20px;
     opacity: 1;
 }
 
-.menubar {
-    background-color: var(--background-color);
+.btn-close:hover {
+    background-color: var(--primary-color);
 }
 
+.menubar, .right-header {
+    background-color: var(--hover-color);
+}
+
+.menubar-lg {
+    background: transparent;
+}
+
+@media (min-width: 992px) { /* lg and up */
+  .menubar-lg {
+    background: var(--hover-color);
+  }
+}
+
+/* Latest updates marquee */
 .marquee-background {
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     color: var(--hover-color);
 }
 
@@ -78,17 +102,17 @@ footer > div {
     white-space: nowrap;
 }
 
+/* Hero section */
 .hero-background {
     background: url(/images/hero.jpg);
     background-size: cover;
-    /* background-size: contain; */
     background-position: center;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
 
-.hero-container {
+.hero-container, .services-container {
     background: rgba(255, 255, 255, 0.7);
 }
 
@@ -102,23 +126,19 @@ footer > div {
     color: var(--secondary-color);
 }
 
+/* CTA Buttons (Contact Us, Company Profile, Learn More, View Services) */
 .cta-btn {
-    --primary-color: #a44123;
-    --secondary-color: #fff;
-    --hover-color: #111;
     --arrow-width: 10px;
     --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 0;
     border-radius: 30px;
-    color: var(--secondary-color);
+    color: var(--hover-color);
     padding: 0.8em 1.8em;
     background: var(--primary-color);
     display: flex;
     transition: 0.2s background;
-    align-items: center;
-    gap: 0.6em;
     font-weight: bold;
+    gap: 0.6em;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -141,7 +161,7 @@ footer > div {
     content: "";
     box-sizing: border-box;
     position: absolute;
-    border: solid var(--secondary-color);
+    border: solid var(--hover-color);
     border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
     display: inline-block;
     top: -3px;
@@ -152,11 +172,11 @@ footer > div {
 }
 
 .cta-btn:hover {
-    background-color: var(--hover-color);
+    background-color: var(--text-color);
 }
 
 .cta-btn:hover .arrow {
-    background: var(--secondary-color);
+    background: var(--hover-color);
 }
 
 .cta-btn:hover .arrow:before {
@@ -167,6 +187,7 @@ footer > div {
     --primary-color: #b09a56;
 }
 
+/* Benefits section */
 #benefits-section .owl-item {
     display: flex;
     justify-content: center;
@@ -175,7 +196,7 @@ footer > div {
 }
 
 #benefits-section .card {
-    width: 250px;
+    width: 300px;
     height: 390px;
     display: flex;
     flex-direction: column;
@@ -201,6 +222,7 @@ footer > div {
     word-break: break-word;
 }
 
+/* Cards */
 .card {
     background: var(--background-color);
     color: var(--hover-color);
@@ -208,8 +230,8 @@ footer > div {
 }
 
 .card:hover {
-    transform: translate(1px, 5%);
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease-in-out; */
+    box-shadow: 0 12px 32px var(--background-color);
 }
 
 .card-img-top {
@@ -218,6 +240,7 @@ footer > div {
     width: 100%;
 }
 
+/* About section */
 .about-container {
     background: rgba(255, 255, 255, 0.4);
 }
@@ -228,6 +251,14 @@ footer > div {
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+.about-row, .know-our-team-row, .our-vision-row {
+    border-left: var(--background-color) solid 5px;
+}
+
+.who-we-are-row, .our-mission-row, .our-goal-row {
+    border-right: var(--background-color) solid 5px;
 }
 
 /* .view-more-sectors, .view-less-sectors {
@@ -287,13 +318,7 @@ footer > div {
     content: none;
 } */
 
-#sectors-section .owl-item {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    height: 100%;
-}
-
+/* Sectors section */
 #sectors-section .card {
     width: 200px;
     display: flex;
@@ -329,41 +354,22 @@ footer > div {
     z-index: -1;
 }
 
-.services-container {
-    background: rgba(255, 255, 255, 0.7);
+.services-card {
+    background-color: #ffffffe3;
+    color: var(--primary-color);
 }
 
 .hsq-btn {
     --primary-color: #4d6920;
 }
 
-.services-card {
-    background-color: #ffffffe3;
-    color: var(--primary-color);
-}
-
-.contact-container {
-    background: rgba(255, 255, 255, 0.4);
-}
-
-.about-row, .know-our-team-row, .our-vision-row {
-    border-left: var(--background-color) solid 5px;
-}
-
-.who-we-are-row, .our-mission-row, .our-goal-row {
-    border-right: var(--background-color) solid 5px;
-}
-
 .more-info-btn {
-    border-radius: 50px;
+    color: white;
     background-color: var(--primary-color);
-    border: none;
+    border-radius: 50px;
     font-weight: 600;
-    box-shadow: 0px 0px 0px 1px var(--secondary-color);
-    cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
-    color: white;
 }
 
 .more-info-btn span {
@@ -397,7 +403,17 @@ footer > div {
 }
 
 .form-control {
-    border: #a44123 solid 1px;
+    border: var(--primary-color) solid 1px;
+}
+
+.form-control::placeholder {
+    color: #868e96;
+}
+
+.form-control:focus {
+    border-color: var(--background-color);
+    outline: 0;
+    box-shadow:  0 0 0 0.25rem #b099568a;
 }
 
 .submit-btn {

@@ -1,25 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
     // Only apply on screens wider than 768px (md and up)
-    if (window.innerWidth > 700) {
-      document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-        dropdown.addEventListener('mouseenter', function () {
-          let dropdownToggle = this.querySelector('.dropdown-toggle');
-          if (dropdownToggle) {
-            let dropdownMenu = this.querySelector('.dropdown-menu');
-            dropdownToggle.classList.add('show');
-            dropdownMenu.classList.add('show');
-          }
-        });
-        dropdown.addEventListener('mouseleave', function () {
-          let dropdownToggle = this.querySelector('.dropdown-toggle');
-          if (dropdownToggle) {
-            let dropdownMenu = this.querySelector('.dropdown-menu');
-            dropdownToggle.classList.remove('show');
-            dropdownMenu.classList.remove('show');
-          }
-        });
-      });
-    }
+    // if (window.innerWidth > 700) {
+    //   document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+    //     dropdown.addEventListener('mouseenter', function () {
+    //       let dropdownToggle = this.querySelector('.dropdown-toggle');
+    //       if (dropdownToggle) {
+    //         let dropdownMenu = this.querySelector('.dropdown-menu');
+    //         dropdownToggle.classList.add('show');
+    //         dropdownMenu.classList.add('show');
+    //       }
+    //     });
+    //     dropdown.addEventListener('mouseleave', function () {
+    //       let dropdownToggle = this.querySelector('.dropdown-toggle');
+    //       if (dropdownToggle) {
+    //         let dropdownMenu = this.querySelector('.dropdown-menu');
+    //         dropdownToggle.classList.remove('show');
+    //         dropdownMenu.classList.remove('show');
+    //       }
+    //     });
+    //   });
+    // }
 
 //     const viewMoreBtn = document.getElementById('view-more-sectors');
 //     const viewLessBtn = document.getElementById('view-less-sectors');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //         viewMoreBtn.classList.remove('d-none');
 //       });
 //     }
-});
+// });
 
 $('.owl-carousel').owlCarousel({
   items:4,
@@ -61,13 +61,21 @@ $('.owl-carousel').owlCarousel({
           nav:false
       },
       600:{
-          items:3,
+          items:2,
           nav:false
       },
       1000:{
+          items:3,
+          nav:false
+      },
+      1200:{
           items:4,
-          nav:false,
-          loop:false
+          nav:false
       }
   }
+});
+
+AOS.init({
+    duration: 1000,
+    // once: true
 });

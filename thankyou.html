@@ -7,6 +7,7 @@
     <meta property="og:description" content="Secure Business, Safe Future">
     <title>Form Submitted - Safeguard Quality Expert Consultancy LLC.</title>
     <link rel="icon" href="./assets/icons/SafeGuard Logo Square.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -22,53 +23,72 @@
 <body>
   <section id="header-section">
     <header>
-      <div class="container-fluid d-flex justify-content-between align-items-center m-0 p-0">
+      <div class="container-fluid d-flex justify-content-between align-items-center m-0 p-0 header-row">
         <div class="logo-img-div">
           <a href="./index.html"><img class="logo-img img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
         </div>
-        <div class="menubar">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menubar flex-grow-1 h-100 menubar-lg">
+          <nav class="navbar navbar-expand-lg w-100 h-100">
+            <div class="container-fluid h-100 m-0 p-0 m-0">
+              <button class="navbar-toggler ms-auto p-3 m-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <div class="logo-img">
-                    <a href="./index.html"><img class="logo-img img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
+              <div class="offcanvas offcanvas-end p-0 m-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header m-0 justify-content-center">
+                  <div class="logo-img-sm-div">
+                    <a href="./index.html"><img class="logo-img-sm img-fluid w-100" src="./assets/icons/SafeGuard Logo Rectangle.png" alt=""></a>
                   </div>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 mb-2 mb-lg-0">
+                <div class="offcanvas-body text-center">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 mb-2 mb-lg-0 gap-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./index.html"><i class="fi fi-rr-home"></i> Home</a>
+                      <a class="nav-link px-3 d-flex flex-column align-items-center shadow-lg" aria-current="page" href="./index.html">
+                        <div><i class="fi fi-rr-home"></i></div>
+                        <div>HOME</div>
+                      </a>
                     </li>
                     <li class="nav-item d-md-block">
-                      <a class="nav-link" href="./food-safety-services.html" role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Food Safety</a>
+                      <a class="nav-link px-3 d-flex flex-column align-items-center shadow-lg" href="./food-safety-services.html" role="button" aria-expanded="false">
+                        <div><i class="fi fi-rr-apps"></i></div>
+                        <div>FOOD SAFETY</div>
+                      </a>
                     </li>
                     <li class="nav-item d-md-block">
-                      <a class="nav-link" href="./health-safety-quality-services.html  " role="button" aria-expanded="false"><i class="fi fi-rr-apps"></i> Health, Safety & Quality</a>
+                      <a class="nav-link px-3 d-flex flex-column align-items-center shadow-lg" href="./health-safety-quality-services.html  " role="button" aria-expanded="false">
+                        <div><i class="fi fi-rr-apps"></i></div>
+                        <div>HEALTH, SAFETY & QUALITY</div>
+                      </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./about.html" role="button" aria-expanded="false"><i class="fi fi-rr-info"></i> About Us</a>
+                      <a class="nav-link px-3 d-flex flex-column align-items-center shadow-lg" href="./about.html" role="button" aria-expanded="false">
+                        <div><i class="fi fi-rr-info"></i></div>
+                        <div>ABOUT US</div>
+                      </a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
-                      <a class="nav-link" href="./contact.html"><i class="bi bi-telephone"></i> Contact</a>
+                      <a class="nav-link px-3 d-flex flex-column align-items-center shadow-lg" href="./contact.html">
+                        <div><i class="fi fi-rr-phone-call"></i></div>
+                        <div>Contact</div>
+                      </a>
                     </li>
                   </ul>
+                  <div class="offcanvas-header m-0 justify-content-center">
+                    <div class="logo-img-sm-div">
+                      <button type="button" class="btn-close p-4 shadow-lg " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </nav>
         </div>
-        <div class="right-header d-none d-xxl-block">
+        <div class="right-header d-none d-xxl-block h-100">
           <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
+            <div class="container-fluid p-0 m-0">
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#"><i class="bi bi-geo-alt"></i> Dubai, UAE</a>
+                    <li class="nav-item px-4 my-1">
+                      <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-location-dot"></i> Dubai, UAE</a>
                       <a class="nav-link" aria-current="page" href="https://wa.me/971555134673"><i class="fa-brands fa-whatsapp"></i> +971 55 5134673</a>
                       <a class="nav-link" aria-current="page" href="mailto:consultus@safeguardme.ae"><i class="fa-solid fa-envelope"></i> consultus@safeguardme.ae</a>
                     </li>
@@ -95,15 +115,15 @@
 
   <section id="hero-section">
     <div class="hero-background">
-      <div class="container hero-container text-center p-5">
+      <div class="container hero-container text-center p-5" data-aos="fade-up">
         <h1 class="display-4">THA<span style="font-family: 'Poppins'; font-weight: 400;">NK</span> YOU</h1>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="">
-      <div class="container contact-container text-center p-5">
+    <div>
+      <div class="container contact-container text-center p-5" data-aos="fade-right">
         <p>Your form submission has been made successfully.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-center">
           <a href="./index.html" class="cta-btn px-4 gap-3">Back to Home
@@ -123,18 +143,14 @@
           <div class="col-12 col-md-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57730.36853954019!2d55.30500301794457!3d25.265605198481683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434f37cdae93%3A0xde756363a1b78491!2sDeira%20-%20Dubai!5e0!3m2!1sen!2sae!4v1750412123788!5m2!1sen!2sae" height="185" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="col-12 col-md-3" style="text-align: left;">
+          <div class="col-12 col-md-3">
             <h5 class="fw-bold">Keep In Touch</h5>
             <p class="link-secondary">
-              <a style="color: #fff; text-decoration: none;" href="#">
-                <i class="bi bi-geo-alt"></i> Office No. 3-273, Al Khabeesi Building,<br>
-                Hind AbdulGhaffar Ghuloom Husain,<br>
-                Al Khabeesi, Deira,<br>
-                Dubai, U.A.E</a>
-              <br><br>
-              <a style="color:#fff; text-decoration: none;" href="mailto:consultus@safeguardme.ae"><i class="bi bi-envelope"></i> consultus@safeguardme.ae</a> 
+              <a style="color: #fff; text-decoration: none;" href="#"><i class="fa-solid fa-location-dot"></i> Dubai, U.A.E</a>
               <br>
-              <a style="color: #fff; text-decoration: none;" href="https://wa.me/971555134673"><i class="bi bi-telephone"></i> +971 55 5134673</a>
+              <a style="color:#fff; text-decoration: none;" href="mailto:consultus@safeguardme.ae"><i class="fa-solid fa-envelope"></i> consultus@safeguardme.ae</a> 
+              <br>
+              <a style="color: #fff; text-decoration: none;" href="https://wa.me/971555134673"><i class="fa-solid fa-phone"></i> +971 55 5134673</a>
             </p>
           </div>
           <div class="col-12 col-md-3">
@@ -151,7 +167,7 @@
             <p class="lead">
               <a style="color: #fff;" href="https://wa.me/971555134673"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;&nbsp;&nbsp;
               <a style="color: #fff;" href="https://www.instagram.com/safeguardme.ae/"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
-              <a style="color: #fff;" href="https://www.facebook.com/profile.php?id=61577370367756"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+              <a style="color: #fff;" href="https://www.facebook.com/safeguardquality"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
               <a style="color: #fff;" href="https://www.youtube.com/channel/UCB0fw43fi-5VwmImpjp35yg"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
               <a style="color: #fff;" href="https://www.linkedin.com/company/safeguard-quality-expert-consultancy/"><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;
               <a style="color: #fff;" href="mailto:consultus@safeguardme.ae"><i class="fa-solid fa-envelope"></i></a>
@@ -167,6 +183,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/css/owlcarousel/owl.carousel.js"></script>
   <script src="/css/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/js/index.js"></script>
 </body>
 </html>
