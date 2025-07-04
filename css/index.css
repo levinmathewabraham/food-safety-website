@@ -187,6 +187,23 @@ footer > div {
     --primary-color: #b09a56;
 }
 
+/* Cards */
+#sectors-section .card:hover, #food-safety-services .card:hover, #health-safety-quality-services .card:hover {
+    transform: scale(1.05);
+}
+
+#benefits-section .card-title, #sectors-section .card-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    /* text-align: center; */
+    word-break: break-word;
+}
+
+#food-safety-services .card-title, #health-safety-quality-services .card-title {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
 /* Benefits section */
 #benefits-section .owl-item {
     display: flex;
@@ -195,9 +212,8 @@ footer > div {
     height: 100%;
 }
 
-#benefits-section .card {
-    width: 300px;
-    height: 390px;
+#benefits-section .card, #sectors-section .card {
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,37 +222,20 @@ footer > div {
     margin: 0 auto;
 }
 
+#benefits-section .card, #sectors-section .card {
+    color: var(--hover-color);
+    background-color: var(--background-color);
+    border: var(--primary-color) solid 2px;
+    width: 280px;
+    height: 390px;
+}
+
 #benefits-section .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
-}
-
-#benefits-section .card-title {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    word-break: break-word;
-}
-
-/* Cards */
-.card {
-    background: var(--background-color);
-    color: var(--hover-color);
-    border: var(--primary-color) solid 1px;
-}
-
-.card:hover {
-    /* transition: transform 0.3s ease-in-out; */
-    box-shadow: 0 12px 32px var(--background-color);
-}
-
-.card-img-top {
-    height: 230px;
-    object-fit: cover;
     width: 100%;
 }
 
@@ -321,28 +320,6 @@ footer > div {
 /* Sectors section */
 #sectors-section .card {
     width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-#sectors-section .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#sectors-section .card-title {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-    word-break: break-word;
 }
 
 .services-background {
@@ -363,9 +340,22 @@ footer > div {
     --primary-color: #4d6920;
 }
 
+/* Food Safety Services section */
+#food-safety-services .card, #health-safety-quality-services .card {
+    border-radius: 30px;
+}
+
+#food-safety-services .card-img-top, #health-safety-quality-services .card-img-top {
+    width: 100%;
+    height: 230px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+}
+
 .more-info-btn {
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     border-radius: 50px;
     font-weight: 600;
     transition-duration: 0.3s;
@@ -393,6 +383,7 @@ footer > div {
 .more-info-btn:hover {
     transition-duration: 0.3s;
     background-color: var(--text-color);
+    color: var(--hover-color);
     align-items: center;
 }
 
@@ -402,8 +393,14 @@ footer > div {
     transform: translateX(0);
 }
 
+.badge {
+    background-color: var(--primary-color);
+    color: var(--hover-color);
+}
+
 .form-control {
     border: var(--primary-color) solid 1px;
+    border-radius: 20px;
 }
 
 .form-control::placeholder {
@@ -417,9 +414,15 @@ footer > div {
 }
 
 .submit-btn {
-    border: var(--background-color) solid 3px;
+    color: var(--hover-color);
+    background: var(--primary-color);
+    border: var(--background-color) solid 1px;
+    border-radius: 30px;
+    padding: 0.8em 1.8em;
+    transition: 0.2s background;
 }
 
 .submit-btn:hover {
-    border: var(--secondary-color) solid 3px;
+    background-color: var(--text-color);
+    border: var(--secondary-color) solid 1px;
 }
