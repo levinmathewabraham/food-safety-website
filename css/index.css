@@ -30,6 +30,19 @@ footer > div {
     max-width: 100%;
 }
 
+.social-floating-icon {
+    z-index: 2;
+}
+
+.social-floating-btn {
+    background-color: #25D366;
+    border-radius: 50%;
+}
+
+.social-floating-btn:hover {
+    background-color: #128c7e;
+}
+
 /* Header */
 .logo-img-div {
     max-width: 500px;
@@ -222,10 +235,10 @@ footer > div {
     margin: 0 auto;
 }
 
-#benefits-section .card, #sectors-section .card {
+#benefits-section .card {
     color: var(--hover-color);
     background-color: var(--background-color);
-    border: var(--primary-color) solid 2px;
+    border: 0px;
     width: 280px;
     height: 390px;
 }
@@ -256,7 +269,7 @@ footer > div {
     border-left: var(--background-color) solid 5px;
 }
 
-.who-we-are-row, .our-mission-row, .our-goal-row {
+.who-we-are-row, .our-mission-row, .our-goal-row, .trainings-row {
     border-right: var(--background-color) solid 5px;
 }
 
@@ -318,12 +331,8 @@ footer > div {
 } */
 
 /* Sectors section */
-#sectors-section .card {
-    width: 200px;
-}
-
-.services-background {
-    background: url(/images/landing-services.jpg);
+.sectors-background {
+    background: url(/images/Toolbox-Talks-scaled.jpeg);
     background-size: cover;
     background-position: 5% center;
     height: 100%;
@@ -331,9 +340,18 @@ footer > div {
     z-index: -1;
 }
 
+#sectors-section .card {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
+    border: 0px;
+    width: 280px;
+    height: 390px;
+}
+
 .services-card {
     background-color: #ffffffe3;
     color: var(--primary-color);
+    border: 0px;
 }
 
 .hsq-btn {
@@ -396,6 +414,19 @@ footer > div {
 .badge {
     background-color: var(--primary-color);
     color: var(--hover-color);
+}
+
+.contact-background {
+    background: url(/images/landing-services.jpg);
+    background-size: cover;
+    background-position: 5% center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .form-control {
