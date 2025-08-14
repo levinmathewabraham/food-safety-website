@@ -79,37 +79,3 @@ AOS.init({
     duration: 1000,
     // once: true
 });
-
-// Phone number validation
-// document.addEventListener('DOMContentLoaded', function() {
-//     const phoneInput = document.querySelector('input[name="phone"]');
-    
-//     if (phoneInput) {
-//         phoneInput.addEventListener('input', function(e) {
-//             // Remove any non-numeric characters except +, -, (, ), and space
-//             let value = e.target.value;
-//             let cleaned = value.replace(/[^0-9+\-()\s]/g, '');
-            
-//             // Update the input value with cleaned version
-//             if (value !== cleaned) {
-//                 e.target.value = cleaned;
-//             }
-//         });
-        
-//         // Also validate on form submission
-//         const form = phoneInput.closest('form');
-//         if (form) {
-//             form.addEventListener('submit', function(e) {
-//                 const phoneValue = phoneInput.value;
-//                 const phoneRegex = /^[0-9+\-()\s]+$/;
-                
-//                 if (!phoneRegex.test(phoneValue)) {
-//                     e.preventDefault();
-//                     alert('Please enter a valid phone number (only numbers, spaces, hyphens, and parentheses allowed)');
-//                     phoneInput.focus();
-//                     return false;
-//                 }
-//             });
-//         }
-//     }
-// });
